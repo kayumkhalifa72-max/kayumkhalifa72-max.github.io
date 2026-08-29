@@ -1,10 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আমার ওয়েবসাইট</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .welcome-text {
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>স্বাগতম!</h1>
-    <p>এটি আমার প্রথম GitHub Pages সাইট</p>
+    <header>
+        <h1>স্বাগতম!</h1>
+        <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>🎉 আমার প্রথম GitHub Pages সাইট</h2>
+            <p class="welcome-text">এটি আমার প্রথম GitHub Pages সাইট</p>
+            <p>
+                এই ওয়েবসাইটটি GitHub Pages ব্যবহার করে তৈরি করা হয়েছে। 
+                এখানে আপনি আমার সম্পর্কে, আমার প্রকল্প এবং আরও অনেক কিছু জানতে পারবেন।
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>📋 বৈশিষ্ট্য</h2>
+            <p>✅ সুন্দর ডিজাইন</p>
+            <p>✅ মোবাইল বান্ধব</p>
+            <p>✅ দ্রুত লোডিং</p>
+            <p>✅ সহজ কাস্টমাইজেশন</p>
+        </div>
+        
+        <div class="card">
+            <h2>🚀 শুরু করুন</h2>
+            <p>
+                আপনি এখন GitHub Pages এর শক্তি দেখতে পারছেন! 
+                এই ওয়েবসাইটটি সম্পূর্ণভাবে কাস্টমাইজ করা যায় এবং আপনার প্রয়োজন অনুযায়ী পরিবর্তন করা যায়।
+            </p>
+            <p>আরও তথ্যের জন্য <strong>GitHub Pages</strong> ডকুমেন্টেশন দেখুন।</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; ২০২৪ আমার ওয়েবসাইট। সকল অধিকার সংরক্ষিত।</p>
+    </footer>
 </body>
 </html>
