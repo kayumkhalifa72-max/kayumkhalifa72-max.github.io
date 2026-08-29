@@ -68,6 +68,41 @@
             line-height: 1.8;
         }
         
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .tool-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tool-card p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
         footer {
             background: rgba(0, 0, 0, 0.9);
             color: white;
@@ -80,6 +115,15 @@
             font-size: 1.2rem;
             color: #667eea;
             font-weight: bold;
+        }
+        
+        .feature-list {
+            margin-top: 1rem;
+        }
+        
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            color: #666;
         }
     </style>
 </head>
@@ -95,16 +139,32 @@
             <p class="welcome-text">এটি আমার প্রথম GitHub Pages সাইট</p>
             <p>
                 এই ওয়েবসাইটটি GitHub Pages ব্যবহার করে তৈরি করা হয়েছে। 
-                এখানে আপনি আমার সম্পর্কে, আমার প্রকল্প এবং আরও অনেক কিছু জানতে পারবেন।
+                এখানে আপনি আমার সম্পর্কে, আমার প্রকল্প এবং দরকারী টুলস জানতে পারবেন।
             </p>
         </div>
         
         <div class="card">
+            <h2>🛠️ আমার টুলস</h2>
+            <p>এখানে আমার তৈরি করা কিছু দরকারী অনলাইন টুলস পাবেন:</p>
+            
+            <div class="tools-grid">
+                <a href="url-shortener.html" class="tool-card">
+                    <h3>🔗</h3>
+                    <h3>URL শর্টেনার</h3>
+                    <p>দীর্ঘ URL কে ছোট এবং সহজ করুন</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
             <h2>📋 বৈশিষ্ট্য</h2>
-            <p>✅ সুন্দর ডিজাইন</p>
-            <p>✅ মোবাইল বান্ধব</p>
-            <p>✅ দ্রুত লোডিং</p>
-            <p>✅ সহজ কাস্টমাইজেশন</p>
+            <ul class="feature-list">
+                <li>✅ সুন্দর ডিজাইন</li>
+                <li>✅ মোবাইল বান্ধব</li>
+                <li>✅ দ্রুত লোডিং</li>
+                <li>✅ সহজ কাস্টমাইজেশন</li>
+                <li>✅ দরকারী টুলস</li>
+            </ul>
         </div>
         
         <div class="card">
